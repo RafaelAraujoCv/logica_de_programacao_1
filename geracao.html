@@ -1,0 +1,21 @@
+<meta charset="utf-8">
+
+<script>
+    
+    function pulaLinha(){
+        document.write("<br>");
+    }
+    function mostra(texto){
+        document.write(texto);
+        pulaLinha();
+    }
+    
+    var media = 28;
+    var anoPortugueses = 1500;
+    var anoAtual = 2018;
+    var anoDiferenca = anoAtual-anoPortugueses;
+    var geracao = anoDiferenca/media;
+    
+    mostra("Numero de gerações: " + geracao);
+    
+</script>

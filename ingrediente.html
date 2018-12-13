@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+
+<h1>Receita do Yan</h1>
+
+<script>
+
+
+
+  var ingredientes = [];//array criado com valor em branco
+
+  var quantidade = parseInt(prompt("Quantos ingredientes você vai adicionar?"));
+
+  var contador = 1;
+
+  while( contador <= quantidade){
+    var ingrediente = prompt("Informe o ingrediente "+ contador);
+
+    var existe = false; //var q ajuda a verificar se nome é repetido junto com o for
+
+    for(var posicao = 0; posicao < ingredientes.length; posicao++){// criar var posicao no for, e verificar no array quantas vezes tiver(numero de array=quantidade digitado pelo usuario)
+      if(ingredientes[posicao] == ingrediente){//se no array [posicao da contagem] for igual ao ingrediente informado, ja existe vira verdadeiro e pausa... retorna while novamente ate colocar informaação valida.
+        existe=true;
+        break;
+      }
+    }
+
+    if(existe == false){
+      ingredientes.push(ingrediente);// add informação
+      contador++;
+    }
+  }
+
+console.log(ingredientes);
+</script>

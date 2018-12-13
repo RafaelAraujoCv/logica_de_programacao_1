@@ -1,0 +1,24 @@
+<meta charset="utf-8">
+
+<script>
+    function pulaLinha (){
+        document.write("<br><br>");
+    }
+    
+    function mostra(frase){
+        document.write(frase);
+        pulaLinha();
+    }
+    
+    var numero=30;
+    
+    while(numero <= 40){
+        if(numero != 30 && numero != 40){
+            mostra("Numero: "+numero);
+        }
+        
+        numero = numero+1;
+    }
+
+    mostra("FIM");
+</script>
